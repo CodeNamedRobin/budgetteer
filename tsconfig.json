@@ -1,3 +1,9 @@
 {
-  "extends": "@react-native/typescript-config/tsconfig.json"
+  "extends": "@react-native/typescript-config/tsconfig.json",
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "target": "ES2022", // or at least ES2020
+    "useDefineForClassFields": false, // <-- important!
+    "strictPropertyInitialization": false // optional, to allow `!` fields
+  }
 }
